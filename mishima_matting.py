@@ -45,6 +45,7 @@ def main():
 
     plt.imshow(alpha, cmap='gray')
     plt.show()
+    h, w, c = img.shape
     plt.imshow((alpha.reshape(h,w,1).repeat(3,2)*img).astype(np.uint8))
     plt.show()
 
